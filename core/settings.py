@@ -117,4 +117,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS=['web-production-c8c7.up.railway.app']
+CSRF_TRUSTED_ORIGINS=['127.0.0.1', 'dmp.herokuapp.com', 'web-production-c8c7.up.railway.app', '0.0.0.0']
