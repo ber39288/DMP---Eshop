@@ -15,8 +15,7 @@ SECRET_KEY = 'django-insecure-e6puspy$0v5q*!3da3f3#t(!jll*0b%j2#2jq@!2r0a4+scfnp
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'web-production-c8c7.up.railway.app']
-CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ['https://web-production-c8c7.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-c8c7.up.railway.app/', 'https://*.up.railway.app/']
 
 
 # Application definition
@@ -31,6 +30,9 @@ INSTALLED_APPS = [
     'store',
     'storages',
 ]
+
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
