@@ -31,8 +31,8 @@ INSTALLED_APPS = [
     'storages',
 ]
 
-CSRF_COOKIE_SECURE = False
-SESSION_COOKIE_SECURE = False
+#CSRF_COOKIE_SECURE = False
+#SESSION_COOKIE_SECURE = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
