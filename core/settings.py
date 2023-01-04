@@ -14,7 +14,9 @@ SECRET_KEY = 'django-insecure-e6puspy$0v5q*!3da3f3#t(!jll*0b%j2#2jq@!2r0a4+scfnp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'web-production-c8c7.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://web-production-c8c7.up.railway.app']
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ALLOWED_HOSTS.copy()
 
 
 # Application definition
@@ -133,5 +135,3 @@ DEFAULT_FILE_STORAGE = 'core.storages.MediaStore'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CSRF_TRUSTED_ORIGINS=['https://web-production-c8c7.up.railway.app/']
